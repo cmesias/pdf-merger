@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Merger</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+    <header>
+        <h1>PDF Merger</h1>
+        <p>Select PDF files to merge:</p>
+    </header>
+
+    <main>
+        <!-- <section class="drop-box"> -->
+    
+            <!-- <div id="drop_zone" ondrop="dropHandler(event);">
+                <p>Drag one or more files to this <i>drop zone</i>.</p>
+            </div> -->
+    
+            <!-- <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <img id="drag1" src="img_logo.gif" draggable="true" ondragstart="drag(event)" width="336" height="69"> -->
+        <!-- </section> -->
+    
+        <section class="upload-box">
+    
+            <!-- Upload and Clear buttons -->
+            <div>
+                <!-- Upload files button -->
+                <label id="upload-label" for="choose-btn">UPLOAD FILES</label>
+                <input type="file" id="choose-btn" multiple accept="application/pdf">
+
+                <!-- Clear files -->
+                <label id="clear-label" for="clear-btn">CLEAR</label>
+                <button type="button" id="clear-btn"></button>
+            </div>
+    
+            <!-- Drop zone for PDFs -->
+            <div>
+                <div id="drop-zone" ondrop="dropHandler(event);" ondragover="dragOverHandler(event);">
+                    <p>Drag one or more files to this <i>drop zone</i>.</p>
+                </div>
+            </div>
+    
+            <!-- Merge PDFs button -->
+            <div>
+                <button id="merge-btn">MERGE</button>
+                <a id="downloadLink" style="display:none;">Download Merged PDF</a>
+            </div>
+    
+            <script src="https://unpkg.com/pdf-lib/dist/pdf-lib.min.js"></script>
+            <script src="merge-pdfs.js"></script>
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>
