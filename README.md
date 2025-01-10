@@ -1,5 +1,5 @@
 # pdf-merger
- Merge PDFs together using pdf-lib.
+ Merge PDFs together using pdf-lib https://pdf-lib.js.org/
 
  Live website: https://cmesias.github.io/pdf-merger/
 
