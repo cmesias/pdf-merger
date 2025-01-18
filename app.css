@@ -1,29 +1,114 @@
-
 * {
-    font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
 }
 
-section, header {
-    margin: 12px;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
-main {
-    margin-top: 80px;
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #418bd1;
+    color: white;
 }
 
 .upload-box {
-    height: 200px;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 28px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+label, button {
+    display: f;
+    margin: 10px 5px;
+    padding: 10px 15px;
+    background-color: #4171d1;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    width: 150px;
+    height: 50px;
+}
+
+label:hover, button:hover {
+    background-color: #4574a0;
+}
+
+.drop-box {
+    margin-top: 20px;
+    border: 2px dashed #ccc;
+    padding: 20px;
+    border-radius: 4px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.drop-box p {
+    margin: 0 0 10px;
+    font-size: 16px;
+}
+
+.drop-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.drop-box ul li {
+    margin: 5px 0;
+    padding: 5px;
+    background-color: #e8e8e8;
+    border-radius: 4px;
+}
+
+button#merge-btn {
+    display: block;
+    margin: 20px auto;
+    background-color: #ff004c;
+}
+
+button#merge-btn:hover {
+    background-color: #b30030;
+}
+
+a#downloadLink {
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 16px;
+    color: #418bd1;
+    text-decoration: none;
+}
+
+a#downloadLink:hover {
+    text-decoration: underline;
+}
+
+/* Highlight drop zone on drag-over */
+.drop-box .drag-over {
+    border-color: #418bd1;
+    background-color: #f0fff0;
+    transition: 0.3s;
+}
+
+/* Clickable cursor for drop zone */
 #drop-zone {
-    margin-top: 16px;
-    margin-bottom: 16px;
-    border: 5px #779cc7 dotted;
-    padding: 100px;
-    width: 700px;
+    cursor: pointer;
+    height: 250px;
+
+    /* Center paragraph text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* This will hide the "Choose Files or "No File Chosen" from an input type of "file" */
@@ -31,52 +116,11 @@ main {
     display: none;
 }
 
-#upload-label {
+footer {
+    text-align: center;
+    background-color: #418bd1;
     color: white;
-    background-color: #41d18e;
-    text-decoration: none;
-    border-radius: 5px;
-    transition-duration: 0.3s;
-    padding: 5px;
-    border: 2px solid #41d18e;
-}
-
-#upload-label:hover {
-    color: #41d18e;
-    background-color: white;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-#clear-label {
-    color: white;
-    background-color: #cfd141;
-    text-decoration: none;
-    border-radius: 5px;
-    transition-duration: 0.3s;
-    padding: 5px;
-    border: 2px solid #cfd141;
-}
-
-#clear-label:hover {
-    color: #cfd141;
-    background-color: white;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-#merge-btn {
-    color: white;
-    background-color: #61355b;
-    text-decoration: none;
-    border-radius: 5px;
-    transition-duration: 0.3s;
-    padding: 5px;
-    border: 2px solid #61355b;
-}
-#merge-btn:hover {
-    color: #61355b;
-    background-color: white;
-    text-decoration: none;
-    cursor: pointer;
+    position: absolute; 
+    bottom: 0;
+    width: 100%;
 }
